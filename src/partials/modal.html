@@ -1,0 +1,104 @@
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .modal-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+  }
+
+  .modal {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    text-align: center;
+    opacity: 0;
+    transform: scale(0.7);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .modal.active {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+
+  .open-modal {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #d41443;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+
+  .open-modal:hover {
+    background-color: #f1c9d5;
+  }
+</style>
+
+<body>
+  <button id="openModalButton" class="open-modal">Read more</button>
+
+  <div id="modalWrapper" class="modal-wrapper">
+    <div id="modalContent" class="modal">
+      <span id="closeModalButton" class="close">&times;</span>
+      <p>
+        Studies have found that eating ice cream can stimulate the pleasure
+        center in our brain that releases dopamine and endorphins. These
+        neurotransmitters can act as stress relievers, flooding our body with a
+        feeling of pleasure, well-being, and accomplishment.
+      </p>
+    </div>
+  </div>
+
+  <script>
+    var modalWrapper = document.getElementById('modalWrapper');
+    var modalContent = document.getElementById('modalContent');
+    var openModalButton = document.getElementById('openModalButton');
+    var closeModalButton = document.getElementById('closeModalButton');
+
+    function openModal() {
+      modalWrapper.style.opacity = '1';
+      modalWrapper.style.visibility = 'visible';
+      modalContent.classList.add('active');
+    }
+
+    function closeModal() {
+      modalWrapper.style.opacity = '0';
+      modalWrapper.style.visibility = 'hidden';
+      modalContent.classList.remove('active');
+    }
+
+    openModalButton.addEventListener('click', openModal);
+
+    closeModalButton.addEventListener('click', closeModal);
+
+    window.addEventListener('click', function (event) {
+      if (event.target === modalWrapper) {
+        closeModal();
+      }
+    });
+  </script>
+</body>
