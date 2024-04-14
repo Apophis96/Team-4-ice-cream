@@ -208,12 +208,12 @@ nav > ul > li:nth-child(1) > a {
   /* background-color: #ffb8ca; */
 }
 .icecream {
-  margin-top: -33rem;
+  margin-top: -32.7rem;
   margin-left: 2rem;
 }
 
 .btnlist {
-  margin-left: -1rem;
+  margin-left: 1rem;
   margin-top: 1.25rem;
 }
 
@@ -254,4 +254,75 @@ nav > ul > li:nth-child(1) > a {
 
 .i23 {
   margin-left: 72rem;
+}
+@media only screen and (max-width: 320px) {
+  .icecream {
+    margin-left: 33rem;
+  position: relative;
+  
+  
+    
+    z-index: 2;
+   
+  }
+}
+@media only screen and (max-width: 320px) {
+  .btnlist {
+    margin-left: 33rem;
+position: relative;
+margin-top: 2.7rem;
+  z-index: 2;
+
+  }
+}
+@media only screen and (max-width: 320px){
+  .sooo{
+    display: none;
+  }
+}
+@media only screen and (max-width: 320px){
+  .full-background{background-color: #ffb8ca;
+    
+  }
+}
+@media only screen and (max-width: 320px){
+  .Ellipse{
+    
+      
+      height: 610px;
+  }
+}@media only screen and (max-width: 320px){
+.logo{
+      margin-left: 30rem;
+        position: relative;
+}
+}
+
+
+@media only screen and (max-width: 320px){
+  .js-open-menu-burger-menu-wrapper
+  {
+   
+margin-left: -19rem;
+  position: relative;
+  
+    
+    z-index: 2;
+   
+  }
+}
+@media only screen and (max-width: 320px){
+  .i16{
+    display: none;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .i23 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .indulge {
+    margin-left: 2rem;
+  }
 }
