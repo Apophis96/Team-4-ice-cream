@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ice Cream</title>
+    <title>Page title</title>
     <link rel="stylesheet" href="./sass/index.scss" />
-    <link rel="preconnect" href="https://fonts.googleapis.com/" />
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
       rel="stylesheet"
@@ -24,17 +24,22 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script type="module" src="./index.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body>
+   <body>
     <header>
       <!-- Header include(aici dati include la tot ce tine de header, navbar hero section etc conteaza ordinea in care dati include de exemplu nav primul hero section nr 2) -->
-      <include src="./partials/navbar.html"></include>
+      <include src="./partials/header.html"></include>
       <include src="./partials/Hero.html"></include>
     </header>
     <main>
       <!-- Aici dati include in ordinea in care vine ce ati lucrat de exemplu sub header avem sectiunea products dupa care urmeaza gallery  -->
+      <include src="./partials/products.html"></include>
       <include src="./partials/howismade.html"></include>
       <include src="./partials/galery.html"></include>
       <include src="./partials/testimonials.html"></include>
@@ -44,5 +49,5 @@
       <!-- Aici dati include la sectiunea de footer -->
       <include src="./partials/footer.html"></include>
     </footer>
-  </body>
+  <script src="./mobile-menu.js"></script>
 </html>
