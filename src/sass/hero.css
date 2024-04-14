@@ -244,7 +244,7 @@ nav > ul > li:nth-child(1) > a {
 
 .ice {
   margin-top: -35.1rem;
-  margin-left: 42rem;
+  margin-left: 44rem;
 }
 
 .sooo {
@@ -257,7 +257,7 @@ nav > ul > li:nth-child(1) > a {
 }
 @media only screen and (max-width: 320px) {
   .icecream {
-    margin-left: 33rem;
+    margin-left: 34rem;
   position: relative;
   
   
@@ -268,7 +268,7 @@ nav > ul > li:nth-child(1) > a {
 }
 @media only screen and (max-width: 320px) {
   .btnlist {
-    margin-left: 33rem;
+    margin-left: 34rem;
 position: relative;
 margin-top: 2.7rem;
   z-index: 2;
@@ -288,12 +288,12 @@ margin-top: 2.7rem;
 @media only screen and (max-width: 320px){
   .Ellipse{
     
-      
-      height: 610px;
+      margin-left: 36rem;
+      height: 38rem;
   }
 }@media only screen and (max-width: 320px){
 .logo{
-      margin-left: 30rem;
+      margin-left: 34rem;
         position: relative;
 }
 }
@@ -303,7 +303,7 @@ margin-top: 2.7rem;
   .js-open-menu-burger-menu-wrapper
   {
    
-margin-left: -19rem;
+margin-left: -12rem;
   position: relative;
   
     
