@@ -1,74 +1,25 @@
-.gallery {
-  width: 63.3125em;
-  height: 26.875em;
+.cards-overlap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.masonry {
+  max-width: 1013px;
   position: relative;
-  top: -5.5625em;
-  left: 4.8125em;
+  object-fit: cover;
+  overflow: hidden;
+  z-index: 28;
+  margin-top: -4.5rem;
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
-
-.one {
-  position: absolute;
-  top: 8.9168em;
-  left: 0;
+.rounded-corners {
+  border-radius: 15%;
 }
-
-.two {
-  position: absolute;
-  top: 5.54em;
-  left: 9.125em;
+.rebel-first {
+  margin-bottom: -1rem;
 }
-
-.three {
-  position: absolute;
-  top: 14.59125em;
-  left: 9.125em;
-}
-
-.four {
-  position: absolute;
-  top: 0;
-  left: 18.25em;
-}
-
-.five {
-  position: absolute;
-  bottom: 0;
-  left: 18.25em;
-}
-
-.six {
-  position: absolute;
-  top: 6.173125em;
-  left: 36.4375em;
-}
-
-.seven {
-  position: absolute;
-  top: 15.339375em;
-  left: 36.4375em;
-}
-
-.eight {
-  position: absolute;
-  top: 4.115625em;
-  left: 45.5625em;
-}
-
-.nine {
-  position: absolute;
-  top: 13.2812875em;
-  left: 45.5625em;
-}
-
-.ten {
-  position: absolute;
-  top: 9.665em;
-  left: 54.6875em;
-}
-
-.testing {
-  background-color: #fff5f6;
-  border: 0.125em solid black;
-  width: 75em;
-  height: 76.8125em;
+.rebel-second {
+  margin-bottom: 76px;
 }

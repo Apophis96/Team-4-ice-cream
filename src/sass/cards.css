@@ -33,6 +33,7 @@ a:active {
   flex-direction: row;
   background-color: var(--background-color-cards);
   gap: 32px;
+  justify-content: center;
 }
 
 .border-card {
