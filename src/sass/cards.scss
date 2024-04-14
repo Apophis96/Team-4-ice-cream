@@ -40,8 +40,9 @@ a:active {
   background-color: var(--background-color);
   border: solid var(--border-color);
   border-radius: 5%;
-  width: 368px;
+  max-width: 75rem;
   height: 538px;
+  margin: 0 auto;
 }
 
 .cafe {
