@@ -18,7 +18,7 @@ section.testimonials {
     margin: 0 auto;
 }
 
-div.card {
+.testimonials div.testimonial-card {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -26,7 +26,7 @@ div.card {
     gap: 16px;
 }
 
-.card-content {
+.testimonial-card-content {
     background-color: var(--container-background);
     padding: 32px 73px;
     width: 80%;
@@ -48,10 +48,9 @@ div.card {
     left: 0;
 }
 
-.card-text {
+.testimonial-card-text {
     display: flex;
     line-height: 26px;
-    padding: 0 20px;
     background-image: url(../images/testimonials-images/line.svg);
     background-repeat: repeat-y;
     background-size: 100% 26px;
@@ -65,12 +64,6 @@ div.card {
     text-align: center;
 }
 
-@media screen and (max-width: 600px) {
-    .card-text {
-        padding: 0 20px;
-    }
-}
-
 .dots::after {
     content: "...";
     display: block;
@@ -79,6 +72,15 @@ div.card {
     display: block;
     line-height: 0;
     letter-spacing: 10px;
+}
+
+.testimonial-user {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.86;
+    margin: 0;
+    padding-top: 16px;
 }
 
 .swiper-horizontal>.swiper-pagination-bullets,
@@ -91,6 +93,7 @@ div.card {
     align-items: center;
     gap: 1.125rem;
     margin-top: 16px;
+    margin-bottom: 120px;
 }
 
 .testimonial-dots .swiper-pagination-bullet {
@@ -104,4 +107,45 @@ div.card {
 
 .testimonial-dots .swiper-pagination-bullet-active {
     background-image: url(../images/testimonials-images/home1.svg);
+}
+
+@media screen and (max-width: 900px) {
+    .testimonial-card-content {
+        padding: 20px 11px 36px;
+    }
+
+    .testimonial-card-text {
+        font-size: 14px;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction,
+    .swiper-pagination-bullets.swiper-pagination-horizontal.testimonial-dots {
+        margin-bottom: 80px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .testimonial-card-content {
+        padding: 30px 31px 47px;
+    }
+
+    .testimonial-card-text {
+        padding: 0 20px;
+    }
+
+    .testimonial-card-text {
+        font-size: 12px;
+    }  
+
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction,
+    .swiper-pagination-bullets.swiper-pagination-horizontal.testimonial-dots {
+        margin-bottom: 60px;
+    }
 }
