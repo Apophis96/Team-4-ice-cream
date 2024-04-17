@@ -1,76 +1,118 @@
 <!-- Sectiunea how it's made- Ilie Mario-Eduard -->
+<section class="howitsmade-section">
+  <div class="container-for-section2" id="how-its-made">
+    <h3 class="subtitle">Tradition and Love</h3>
+    <p class="howitsmade-title">How It's Made</p>
+  </div>
+  <div class="howitsmade-background">
+    <div class="gap-for-cow">
+      <div class="cow">
+        <picture>
+          <!-- Desktop-->
+          <source
+            media="(min-width: 1280px)"
+            srcset="/src/images/desktop/howitsmade-cow-jug-desktop.png"
+          />
+          <!--Tablet-->
+          <source
+            media="(min-width: 768px)"
+            srcset="/src/images/tablet/howitsmade-cow-jug-tablet.png"
+          />
 
-<section class="how-is-made">
-  <div class="crazy-cow">
-    <div class="content-container">
-      <h3>Tradition and love</h3>
-      <h1>HOW IT'S MADE?</h1>
-      <div class="image-container">
-        <img src="./images/home-pic4 1.png" alt="Cow and milk" />
-        <div class="text-container">
-          <p>
-            Ice is a place where you will become not only a little happier, but
-            also healthier. Health is the main value for us, and we follow it
-            when creating our handmade desserts.
-          </p>
-          <p>
-            We use traditional recipes and 100% natural ingredients. Our
-            products are so natural that they can be given to children from the
-            age of three years. Sweets lovers can expect 55 types of ice cream,
-            15 types of coffee and 23 milkshakes.
-          </p>
-
-          <button id="openModalButton" class="open-modal">Read more</button>
-
-          <div id="modalWrapper" class="modal-wrapper">
-            <div id="modalContent" class="modal">
-              <span id="closeModalButton" class="close">&times;</span>
+          <!-- Mobil-->
+          <source
+            media="(min-width: 320px)"
+            srcset="/src/images/mobile/howitsmade-cow-jug-mobile.png"
+          />
+          <img
+            src="/src/images/desktop/howitsmade-cow-jug-desktop.png"
+            alt="Cowandmilk"
+          />
+        </picture>
+      </div>
+      <div class="right-p-cow">
+        <p class="one-sec2">
+          Ice is a place where you will become not only a little happier, but
+          also healthier. Health is the main value for us, and we follow it when
+          creating our handmade desserts.
+        </p>
+        <p class="two-sec2">
+          We use traditional recipes and 100% natural ingredients. Our products
+          are so natural that they can be given to children from the age of
+          three years. Sweets lovers can expect 55 types of ice cream, 15 types
+          of coffee and 23 milkshakes.
+        </p>
+        <button type="button" class="howitsmade-btn">Read more ></button>
+        <div class="modal-overlay">
+          <div class="modal-content-cow">
+            <div class="fix-for-close">
+              <span class="close-modal">&times;</span>
+              <h2>How it`s made</h2>
+            </div>
+            <div class="space">
+              <h1>Lorem Ipsum</h1>
               <p>
-                Studies have found that eating ice cream can stimulate the
-                pleasure center in our brain that releases dopamine and
-                endorphins. These neurotransmitters can act as stress relievers,
-                flooding our body with a feeling of pleasure, well-being, and
-                accomplishment.
+                "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+                consectetur, adipisci velit..."
+              </p>
+              <p>
+                "There is no one who loves pain itself, who seeks after it and
+                wants to have it, simply because it is pain..."
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vestibulum ac libero nisl. Aenean vitae turpis dignissim,
+                convallis tortor et, elementum ligula. Integer pharetra nisi
+                justo, nec eleifend tellus malesuada sit amet. Sed at justo
+                lacinia, facilisis ante sit amet, hendrerit est. Aenean nisl
+                tellus, bibendum euismod lobortis id, lobortis vitae risus.
+                Curabitur id sodales mauris. Morbi pharetra porta vehicula.
+                Pellentesque habitant morbi tristique senectus et netus et
+                malesuada fames ac turpis egestas. Phasellus eu ipsum enim.
+                Nulla rutrum tincidunt velit, id feugiat dolor vestibulum eu.
+                Donec semper vulputate eros. Ut euismod, metus et auctor
+                bibendum, tellus urna eleifend neque, et euismod ligula leo a
+                sem. Aenean ornare neque at orci egestas laoreet. Class aptent
+                taciti sociosqu ad litora torquent per conubia nostra, per
+                inceptos himenaeos.
               </p>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="icons">
-        <div class="icon-721">
-          <svg class="svg-dim">
-            <use href="./images/icons.svg/symbol-defs.svg#icon-Frame-4"></use>
-          </svg>
-          <h2>721</h2>
-          <span
-            >At 721 Cow, we're passionate about producing the highest quality
-            ice cream possible.</span
-          >
-        </div>
-        <div class="kg">
-          <svg class="svg-dim">
-            <use
-              href="./images/icons.svg/symbol-defs.svg#icon-apples-svgrepo-com-1"
-            ></use>
-          </svg>
-          <h2>16KG</h2>
-          <span
-            >You can be sure you're getting a scoop of the freshest ice cream
-            around.</span
-          >
-        </div>
-        <div class="icon-84">
-          <svg class="svg-dim">
-            <use href="./images/icons.svg/symbol-defs.svg#icon-Group"></use>
-          </svg>
-          <h2>84</h2>
-          <span
-            >We use only the freshest, locally-sourced ingredients to make our
-            84 unique and delicious flavors.</span
-          >
-        </div>
-      </div>
+    </div>
+  </div>
+  <div class="icon-list-section2">
+    <div class="first-box-sec2">
+      <svg class="svg-sec2">
+        <use href="/src/images/symbol-defs.svg#icon-howitsmade-udder"></use>
+      </svg>
+      <h2>721</h2>
+      <p>
+        At 721 Cow, we're passionate about producing the highest quality ice
+        cream possible.
+      </p>
+    </div>
+    <div class="second-box-sec2">
+      <svg class="svg-sec2">
+        <use href="/src/images/symbol-defs.svg#icon-howitsmade-apples"></use>
+      </svg>
+      <h2>16kg</h2>
+      <p>
+        You can be sure you're getting a scoop of the freshest ice cream around.
+      </p>
+    </div>
+    <div class="third-box-sec2">
+      <svg class="svg-sec2">
+        <use
+          href="/src/images/icon-howitsmade-heart.svg#icon-icon-howitsmade-heart"
+        ></use>
+      </svg>
+      <h2>84</h2>
+      <p>
+        We use only the freshest, locally-sourced ingredients to make our unique
+        and delicious flavors.
+      </p>
     </div>
   </div>
 </section>
