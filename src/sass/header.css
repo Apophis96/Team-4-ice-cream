@@ -27,12 +27,12 @@ a {
   /* position: absolute; */
 }
 
-.header {
+/* .header {
   background-color: var(--header-background);
   max-width: 75rem;
   margin: 0 auto;
   padding: 2.313rem 1rem 0 1rem;
-}
+} */
 
 .container-row {
   display: flex;

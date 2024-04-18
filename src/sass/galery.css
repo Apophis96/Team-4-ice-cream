@@ -4,22 +4,32 @@
   justify-content: center;
 }
 .masonry {
-  max-width: 1013px;
+  max-width: 63.3125em;
   position: relative;
   object-fit: cover;
   overflow: hidden;
   z-index: 28;
-  margin-top: -4.5rem;
+  margin-top: -4.5em;
   display: flex;
-  gap: 8px;
+  gap: 4px; /*modificat*/
   align-items: center;
 }
 .rounded-corners {
   border-radius: 15%;
 }
 .rebel-first {
-  margin-bottom: -1rem;
+  margin-bottom: -1em;
 }
 .rebel-second {
-  margin-bottom: 76px;
+  margin-bottom: 4.75em;
+}
+/* mods */
+.dimension {
+  width: 100%;
+}
+.dimension2 {
+  width: 50%;
+}
+.dimension1 {
+  width: 90%;
 }
