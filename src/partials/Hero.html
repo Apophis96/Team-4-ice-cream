@@ -1,57 +1,51 @@
-<!-- Hero section start(Nume) -->
-<section class="hero">
-  <div class="headerhero">
-    <div class="full-background">
-      <div class="header">
-        <div class="container-row">
-          <div class="logo">
-            <a href="/src/index.html">
-              <img src="/src/images/navbar-images/icelogo.webp" alt="logo" />
-            </a>
-          </div>
-          <nav class="main-navigation">
-            <ul>
-              <li><a>Home</a></li>
-              <li><a>About us</a></li>
-              <li><a>How it's made?</a></li>
-              <li><a>Our products</a></li>
-              <li><a>Contact</a></li>
-            </ul>
-          </nav>
-          <div class="burger-button-wrapper">
-            <a class="js-open-menu burger-menu-wrapper">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="14"
-                fill="none"
-                viewBox="0 0 20 14"
-              >
-                <path stroke="#D41443" d="M0 1h20M0 7h20M0 13h20" />
-              </svg>
-            </a>
-            <button type="button" class="buy-now-button">
-              <span class="button-text">Buy now</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="8"
-                height="12"
-                fill="none"
-                viewBox="0 0 6 10"
-              >
-                <path
-                  stroke="#D41443"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="m1 1 4 4-4 4"
-                />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-      <!-- Header: Mobile Navigation -->
+<!-- Header -->
+<section class="header">
+  <div class="container-row">
+    <div class="logo">
+      <a href="/src/index.html">
+        <img src="/src/images/navbar-images/icelogo.webp" alt="logo" />
+      </a>
+    </div>
+    <nav class="main-navigation">
+      <ul>
+        <li><a>Home</a></li>
+        <li><a>About us</a></li>
+        <li><a>How it's made?</a></li>
+        <li><a>Our products</a></li>
+        <li><a>Contact</a></li>
+      </ul>
+    </nav>
+    <div class="burger-button-wrapper">
+      <a class="js-open-menu burger-menu-wrapper">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="14"
+          fill="none"
+          viewBox="0 0 20 14"
+        >
+          <path stroke="#D41443" d="M0 1h20M0 7h20M0 13h20" />
+        </svg>
+      </a>
+      <button type="button" class="buy-now-button">
+        <span class="button-text">Buy now</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="8"
+          height="12"
+          fill="none"
+          viewBox="0 0 6 10"
+        >
+          <path
+            stroke="#D41443"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="m1 1 4 4-4 4"
+          />
+        </svg>
+      </button>
+
       <div class="js-menu-container">
         <button class="menu-toggle js-close-menu close-btn">
           <svg
@@ -95,44 +89,196 @@
         </div>
       </div>
     </div>
-    <div class="icecream">
-      <img src="/src/images/ice cream made with passion (1).png" alt="" />
+  </div>
+  <!-- Hero Section -->
+  <div class="hero-section">
+    <div class="hero-left-container">
+      <div class="hero-title-holder">
+        <h1>ice cream made with <span>passion</span></h1>
+      </div>
+      <div class="hero-button-holder">
+        <button type="button" class="hero-button hero-text">Products</button>
+        <button type="button" class="hero-button hero-text">
+          How it's made?
+        </button>
+      </div>
+      <div class="corner-image-text-holder">
+        <picture>
+          <source
+            media="(min-width: 960px)"
+            srcset="
+              /src/images/hero-images/bio-milk.webp     534w,
+              /src/images/hero-images/bio-milk@2x.webp 1068w
+            "
+            sizes="50vw"
+          />
+          <source
+            media="(min-width: 600px)"
+            srcset="/src/images/hero-images/bio-milk.webp 474w"
+          />
+          <source srcset="/src/images/hero-images/bio-milk-medium.webp 273w" />
+          <img src="/src/images/hero-images/bio-milk.webp" alt="Fresh milk" />
+        </picture>
+        <div class="text-button-holder">
+          <p class="hero-text">
+            Indulge in a scoop of ice cream made with passion and treat your
+            taste buds to an unforgettable experience!
+          </p>
+          <button type="button" class="hero-round-button">
+            <svg width="8" height="8">
+              <use
+                href="/src/images/products-images/symbol-defs.svg#icon-arrow-right2"
+              ></use>
+            </svg>
+          </button>
+        </div>
+      </div>
     </div>
-    <div class="btnlist">
-      <img src="/src/images/Btn 3.png" />
-      <img src="/src/images/Btn 2.png" alt="" />
+    <div class="hero-middle-container">
+      <picture class="hero-image">
+        <source
+          media="(min-width: 960px)"
+          srcset="
+            /src/images/hero-images/ice-cream-tower.webp     534w,
+            /src/images/hero-images/ice-cream-tower@2x.webp 1068w
+          "
+          sizes="50vw"
+        />
+        <source
+          media="(min-width: 600px)"
+          srcset="/src/images/hero-images/ice-cream-tower-small.webp 474w"
+        />
+        <source
+          srcset="
+            /src/images/hero-images/ice-cream-tower-mobile.webp    273w,
+            /src/images/hero-images/ice-cream-tower-mobile@2x.webp 546w
+          "
+        />
+        <img
+          src="/src/images/hero-images/ice-cream-tower.webp"
+          alt="Scoops of ice cream stacked on one ice cream cone"
+        />
+      </picture>
     </div>
-
-    <div class="bio"><img src="/src/images/slider-pic5 1.png" alt="" /></div>
-
-    <div class="indulge">
-      <img
-        src="/src/images/Indulge in a scoop of ice cream made with passion and treat your taste buds to an unforgettable experience!.png"
-        alt=""
-      />
+    <div class="hero-right-container">
+      <div class="cafes-holder">
+        <div class="cafes">
+          <h4>16</h4>
+          <p class="hero-text">cafes</p>
+        </div>
+      </div>
+      <div class="trucks-holder">
+        <div class="trucks">
+          <h4>23</h4>
+          <p class="hero-text">food trucks</p>
+        </div>
+      </div>
+      <div class="right-corner-image-holder">
+        <picture>
+          <source
+            media="(min-width: 960px)"
+            srcset="
+              /src/images/hero-images/tasty-pic.webp     534w,
+              /src/images/hero-images/tasty-pic@2x.webp 1068w
+            "
+            sizes="50vw"
+          />
+          <source
+            media="(min-width: 600px)"
+            srcset="/src/images/hero-images/tasty-pic.webp 474w"
+          />
+          <source srcset="/src/images/hero-images/tasty-pic-medium.webp 273w" />
+          <img
+            src="/src/images/hero-images/tasty-pic.webp"
+            alt="Young girl eats a tasty ice cream"
+          />
+        </picture>
+      </div>
     </div>
-
-    <div class="slider">
-      <img src="/src/images/arrow-right 3.png" alt="" />
+  </div>
+  <!-- Header: Mobile Navigation -->
+  <div class="js-menu-container">
+    <button class="menu-toggle js-close-menu close-btn">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="none"
+        viewBox="0 0 16 16"
+      >
+        <path stroke="#fff" d="m1.26 1 13.48 14M1 14.74 15 1.26" />
+      </svg>
+    </button>
+    <div class="mobile-menu">
+      <button type="button" class="buy-now-button">
+        <span class="button-text">Buy now</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="8"
+          height="12"
+          fill="none"
+          viewBox="0 0 6 10"
+        >
+          <path
+            stroke="#D41443"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="m1 1 4 4-4 4"
+          />
+        </svg>
+      </button>
+      <nav class="main-navigation">
+        <ul>
+          <li><a>Home</a></li>
+          <li><a>About us</a></li>
+          <li><a>How it's made?</a></li>
+          <li><a>Our products</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+      </nav>
     </div>
-
-    <div class="Ellipse">
-      <img src="/src/images/Ellipse 3.png" alt="" />
+  </div>
+  <div class="js-menu-container">
+    <button class="menu-toggle js-close-menu close-btn">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="none"
+        viewBox="0 0 16 16"
+      >
+        <path stroke="#fff" d="m1.26 1 13.48 14M1 14.74 15 1.26" />
+      </svg>
+    </button>
+    <div class="mobile-menu">
+      <button type="button" class="buy-now-button">
+        <span class="button-text">Buy now</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="8"
+          height="12"
+          fill="none"
+          viewBox="0 0 6 10"
+        >
+          <path
+            stroke="#D41443"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="m1 1 4 4-4 4"
+          />
+        </svg>
+      </button>
+      <nav class="main-navigation">
+        <ul>
+          <li><a>Home</a></li>
+          <li><a>About us</a></li>
+          <li><a>How it's made?</a></li>
+          <li><a>Our products</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+      </nav>
     </div>
-
-    <div class="sooo">
-      <img src="/src/images/slider-pic4 1.png" alt="" />
-    </div>
-
-    <div class="ice">
-      <img src="/src/images/slider-pic7 1 (1).png" alt="" />
-    </div>
-
-    <div class="i16">
-      <img src="/src/images/Group 22.png" alt="" />
-    </div>
-
-    <div class="i23"><img src="/src/images/Group 23.png" alt="" /></div>
   </div>
 </section>
-<!-- Hero section start(Nume) -->

@@ -9,10 +9,23 @@
   --background-color-food-truck: #c2e297;
   --cards-title-color: #ffffff;
   --line-vector-color: #e1e1e1;
+  --locations-font-family: 'DM Sans';
 }
 
 p {
   color: var(--paragraph-color);
+  font-family: var(--locations-font-family);
+  font-size: 12px;
+}
+
+h3 {
+  font-family: var(--locations-font-family);
+  font-size: 12px;
+}
+
+h4 {
+  font-family: var(--locations-font-family);
+  font-size: 12px;
 }
 
 .phone,
@@ -30,9 +43,9 @@ a:active {
 
 .cards {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background-color: var(--background-color-cards);
-  gap: 32px;
+  gap: 20px;
   justify-content: center;
 }
 
@@ -40,9 +53,11 @@ a:active {
   padding: 30px;
   background-color: var(--background-color);
   border: solid var(--border-color);
-  border-radius: 5%;
-  width: 368px;
-  height: 538px;
+  border-radius: 24px;
+  box-shadow: 0 8px 30px 0 rgba(212, 20, 67, 0.1);
+  width: 280px;
+  height: 412px;
+  margin-bottom: 20px;
 }
 
 .cafe {
@@ -59,6 +74,7 @@ a:active {
   border: solid var(--background-color-cafe);
   border-radius: 1rem;
   width: 5rem;
+  padding-left: 10px;
 }
 
 .food-truck {
@@ -75,9 +91,64 @@ a:active {
   border: solid var(--background-color-food-truck);
   border-radius: 1rem;
   width: 9rem;
+  padding-left: 10px;
 }
 
 .line-vector {
   stroke: var(--line-vector-color);
   height: 32px;
+}
+
+/*Tablete cu ecran peste 768px*/
+@media screen and (min-width: 768px) {
+  p {
+    color: var(--paragraph-color);
+    font-family: var(--locations-font-family);
+    font-size: 14px;
+  }
+
+  h3 {
+    font-family: var(--locations-font-family);
+    font-size: medium;
+  }
+
+  h4 {
+    font-family: var(--locations-font-family);
+    font-size: 14px;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .border-card {
+    width: 224px;
+    height: 528px;
+  }
+}
+
+/*Ecrane cu ecran peste 1280px*/
+@media screen and (min-width: 1280px) {
+  p {
+    color: var(--paragraph-color);
+    font-family: var(--locations-font-family);
+    font-size: medium;
+  }
+
+  h3 {
+    font-family: var(--locations-font-family);
+    font-size: medium;
+  }
+
+  h4 {
+    font-family: var(--locations-font-family);
+    font-size: medium;
+  }
+
+  .border-card {
+    width: 368px;
+    height: 538px;
+  }
 }

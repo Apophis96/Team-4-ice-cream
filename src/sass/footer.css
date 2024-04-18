@@ -55,7 +55,6 @@ footer p {
   flex-wrap: wrap;
   justify-content: center;
   gap: 12px;
-  /* max-width: 75rem; */
   margin: 0 auto;
   padding-top: 3.75rem;
   background-color: var(--section-background);
@@ -100,7 +99,6 @@ footer p {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  /* max-width: 75rem; */
   margin: 0 auto;
   padding: 7.5rem 1rem 0 1rem;
   background-color: var(--section-background);
