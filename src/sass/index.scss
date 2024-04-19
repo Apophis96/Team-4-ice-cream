@@ -1,45 +1,10 @@
-@import url(/src/sass/cards.css);
-@import url(/src/sass/footer.css);
-@import url(/src/sass/galery.css);
-@import url(/src/sass/header.css);
-@import url(/src/sass/hero.css);
-@import url(/src/sass/howismade.css);
-@import url(/src/sass/testimonials.css);
-@import url(/src/sass/products.css);
+@import '/src/sass/header.scss';
+@import '/src/sass/products.scss';
+@import '/src/sass/howismade.scss';
+@import '/src/sass/galery.scss';
+@import '/src/sass/testimonials.scss';
+@import '/src/sass/cards.scss';
+@import '/src/sass/footer.scss';
 
-@media screen and (max-width: 480px) {
-}
 
-@media screen and (max-width: 320px) {
-  .masonry {
-    max-width: 100%;
-  }
 
-  .cards-overlap {
-    max-width: 100%;
-  }
-
-  .border-card {
-    width: 19em;
-    height: 35em;
-  }
-}
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
-}
-@media screen and (min-width: 769px) and (max-width: 900px) {
-  .first-box-sec2,
-  .second-box-sec2,
-  .third-box-sec2 {
-    max-width: 13em;
-  }
-}
-
-@media screen and (min-width: 900px) and (max-width: 1000px) {
-}
-
-@media screen and (min-width: 1000px) and (max-width: 1280px) {
-}
-
-@media screen and (min-width: 1281px) {
-}

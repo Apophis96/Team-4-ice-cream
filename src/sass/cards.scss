@@ -1,0 +1,134 @@
+/*Card section - Adrian Coman*/
+:root {
+  --background-color: #fff;
+  --black-font-color: #000;
+  --paragraph-color: #907e82;
+  --open-hours-color: #ffa5ba;
+  --background-color-cards: #fff5f6;
+  --background-color-cafe: #f0d1a5;
+  --background-color-food-truck: #c2e297;
+  --line-vector-color: #e1e1e1;
+  --locations-font-family: "DM Sans", sans-serif;
+}
+
+.section-container {
+  display: flex;
+  max-width: 75rem;
+  margin: 0 auto;
+  background-color: var(--background-color-cards);
+  gap: 20px;
+  justify-content: center;
+  position: relative;
+}
+
+.location-cards {
+  display: flex;
+  position: absolute;
+  top: -112px;
+  gap: 32px;
+  padding: 0 22px;
+  }
+
+.location-cards p {
+  font-size: 16px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  margin: 0;
+}
+
+
+
+.location-card {
+  border-radius: 24px;
+  max-width: 368px;
+  min-height: 538px;
+  box-shadow: 0 8px 30px 0 rgba(212, 20, 67, 0.1);
+  background: var(--background-color);
+  padding: 40px;
+}
+
+.loc-card-title {
+  text-transform: uppercase;
+  background: var(--background-color-cafe);
+  font-size: 16px;
+  max-width: 75px;
+  border-radius: 8px;
+  text-align: center;
+  color: var(--background-color);
+}
+
+.location-cards>div:nth-child(2)>p {
+  max-width: 138px;
+  background: var(--background-color-food-truck);
+}
+
+.grey-text {
+  color: var(--paragraph-color);
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 32px 0;
+  border-bottom: 1px solid var(--line-vector-color);
+}
+
+.open-hours {
+  display: flex;
+  flex-direction: column;
+  gap: 12;
+  padding: 32px 0;
+  border-bottom: 1px solid var(--line-vector-color);
+}
+
+.bold-text { 
+  font-weight: 700;
+}
+
+.pink-text {
+  color: var(--open-hours-color);
+}
+
+.loc-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 32px;
+}
+
+@media screen and (max-width: 980px) {
+
+  .location-cards p {
+    font-size: 14px;
+  }
+
+  .location-cards {
+    top: -302px;
+    padding: 0 16px;
+  }
+  .location-card {
+    padding: 40px 32px;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  .location-cards {
+    flex-direction: column;
+    gap: 20px;
+    top: -325px;
+  }
+}
+
+
+@media screen and (max-width:580px) {
+  .location-card {
+    min-height: 412px;
+  }
+
+  .location-cards p {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+}

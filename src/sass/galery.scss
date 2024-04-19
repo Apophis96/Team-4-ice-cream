@@ -1,0 +1,74 @@
+/* Gallery section start Mariuta Naomi-Ioana */
+:root {
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.masonry {
+  max-width: 63.31rem;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  z-index: 28;
+  margin-top: -4.5rem;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.masonry-item-1,
+.masonry-item-2,
+.masonry-item-4,
+.masonry-item-5,
+.masonry-item {
+  width: 14.3%;
+}
+.masonry-item-3 {
+  width: 28.6%;
+}
+
+.dimension1 {
+  max-width: 100%;
+  height: auto;
+}
+.dimension2 {
+  max-width: 50%;
+  height: auto;
+}
+
+.rounded-corners {
+  border-radius: 15%;
+}
+.rebel-first {
+  margin-bottom: -1rem;
+}
+.rebel-second {
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 320px) {
+  .masonry {
+    max-width: 100%;
+  }
+
+  .gallery {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .masonry {
+    max-width: 50rem;
+    gap: 0.5em;
+    margin-top: -11.6875rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .masonry {
+    max-width: 63.3125rem;
+    gap: 0.3em;
+    margin-top: -3.6rem;
+  }
+}
+/* <!-- Gallery section end Mariuta Naomi-Ioana --> */

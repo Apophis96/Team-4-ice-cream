@@ -1,0 +1,165 @@
+//  Section: Testimonials - Katalin Lengyel
+:root {
+    --font-family: "DM Sans", sans-serif;
+    --second-family: "Titan One", sans-serif;
+    --background-color: #FFF;
+    --dot-color: #C7133E;
+    --inactive-dot-color: #D9D9D9;
+    --container-background: #FAFAFA;
+    --section-background: #FFF5F6;
+}
+
+/* Testimonials */
+section.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 75rem;
+    padding-top: 7.5rem;
+    margin: 0 auto;
+    padding-bottom: 110px;
+}
+
+.testimonials div.testimonial-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+}
+
+.testimonial-card-content {
+    background-color: var(--container-background);
+    padding: 32px 73px;
+    width: 80%;
+}
+
+.card-elements {
+    display: flex;
+    font-weight: 500;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+}
+
+.quotemark {
+    display: flex;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 0;
+    top: 0;
+    left: 0;
+}
+
+.testimonial-card-text {
+    display: flex;
+    line-height: 26px;
+    background-image: url(../images/testimonials-images/line.svg);
+    background-repeat: repeat-y;
+    background-size: 100% 26px;
+    padding: 0 50px;
+    line-height: 26px;
+    background-position-y: 38px;
+    left: 0;
+    top: 4px;
+    position: relative;
+    margin-left: -54px;
+    text-align: center;
+}
+
+.dots::after {
+    content: "...";
+    display: block;
+    color: var(--dot-color);
+    font-size: 50px;
+    display: block;
+    line-height: 0;
+    letter-spacing: 10px;
+}
+
+.testimonial-user {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.86;
+    margin: 0;
+    padding-top: 16px;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction,
+.swiper-pagination-bullets.swiper-pagination-horizontal.testimonial-dots {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.125rem;
+    margin-top: 16px;
+    margin-bottom: 120px;
+}
+
+.testimonial-dots .swiper-pagination-bullet {
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    background-color: var(--inactive-dot-color);
+    border-radius: 50%;
+}
+
+
+.testimonial-dots .swiper-pagination-bullet-active {
+    background-image: url(../images/testimonials-images/home1.svg);
+}
+
+@media screen and (max-width: 900px) {
+    .testimonial-card-content {
+        padding: 20px 11px 36px;
+    }
+
+    .testimonial-card-text {
+        font-size: 14px;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction,
+    .swiper-pagination-bullets.swiper-pagination-horizontal.testimonial-dots {
+        margin-bottom: 80px;
+    }
+
+        section.testimonials.swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
+        padding-top: 3.75rem;
+    }
+
+    section.testimonials {
+        padding-bottom: 290px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    section.testimonials {
+        padding-bottom: 330px;
+    }
+
+    .testimonial-card-content {
+        padding: 30px 31px 47px;
+    }
+
+    .testimonial-card-text {
+        padding: 0 20px;
+    }
+
+    .testimonial-card-text {
+        font-size: 12px;
+    }  
+
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction,
+    .swiper-pagination-bullets.swiper-pagination-horizontal.testimonial-dots {
+        margin-bottom: 60px;
+    }
+}
