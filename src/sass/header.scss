@@ -34,7 +34,7 @@ h1 {
 
 .nav-container {
   background-color: var(--header-background);
-    // max-width: 75rem;
+  // max-width: 75rem;
   margin: 0 auto;
   padding: 2.5rem 1rem 0 1rem;
   overflow: hidden;
@@ -194,8 +194,18 @@ nav > ul > li:nth-child(1) > a {
   }
 }
 
+@media screen and (max-width: 800px) {
+  div.container-row > nav {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 480px) {
   div.container-row > div.burger-button-wrapper > button {
+    display: none;
+  }
+
+  div.container-row > nav {
     display: none;
   }
 
